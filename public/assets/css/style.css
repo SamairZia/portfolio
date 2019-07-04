@@ -1,0 +1,141 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  /* font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Roboto Slab', serif; */
+}
+
+h1, h2, h3, h4, h5, h6, p, label, small {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.display-4, .display-3, .display-2, .display-1, .headline, .title, .subheading, .body-2, .body-1, .caption{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.roboto-font{
+  font-family: 'Roboto Slab', serif !important; 
+}
+
+.alternates-font{
+  font-family: 'Montserrat Alternates', sans-serif !important;
+}
+
+.josefin-font{
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.orbitron-font{
+  font-family: 'Orbitron', sans-serif !important;
+}
+.application{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.navigation-color{
+  background-color: #181818 !important;
+}
+
+.primary-color{
+  color:#FFAA00;
+}
+
+.primary-background{
+  background-color: #FFAA00;
+}
+
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.w-75{
+  width: 75%;
+}
+
+.w-50{
+  width: 50%;
+}
+
+.w-25{
+  width: 25%;
+}
+
+.heading-row{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Main section css */
+.site-title{
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+}
+
+/* About section css */
+.about-section{  
+  /* background: url('../../public/assets/img/about.png');  
+  background-repeat: no-repeat;
+  background-size: cover; */
+  padding: 10px;
+}
+
+/* experience section css */
+
+.experience-section , .skill-education, .portfolio, .talk{
+  padding: 10px;
+}
+
+/* education css section */
+
+.education-div{
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 25px;
+}
+
+.education-info{
+  border-left: 4px solid #FA0;
+  padding: 0px 0px 0px 20px;
+  margin: 20px 0px 50px 10px;
+}
+
+.skill-info{
+  margin: 20px 0px 20px 20px;
+}
+
+.skill-info label {
+  vertical-align: middle;
+}
+
+.skill-info .v-icon{
+  color: #FFAA00 !important;
+}
+
+.skill-info .v-icon.nottt{
+  color: #181818 !important;
+}
+
+.social-icons{
+  font-size: 24px;
+  color: white;
+  margin: 10px 10px 10px 0px;
+}
+
+.email-link{
+  color: white;
+  text-decoration: none;
+  transition: 500ms all ease;
+}
+
+.email-link:hover{
+  color: #FFAA00;
+  text-decoration: none;
+}
