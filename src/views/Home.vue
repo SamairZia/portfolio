@@ -353,7 +353,7 @@ export default {
 
 <style>
 .site-wrapper {
-  background: url("../../public/assets/img/main-background.png");
+  background: url("../../public/assets/img/bg.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
