@@ -94,6 +94,19 @@ h1, h2, h3, h4, h5, h6, p, label, small {
   padding: 10px;
 }
 
+.skill-education {
+  background: url("../img/abstract.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* .experience-section {
+  background: url("../img/abstract.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+} */
 /* education css section */
 
 .education-div{

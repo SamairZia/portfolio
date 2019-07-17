@@ -9,7 +9,7 @@
         <h1 class="display-2 orbitron-font">Front-end Developer</h1>
       </div>
     </section>
-    <section class="about-section">
+    <section id="about" class="about-section">
       <!-- USING VUETIFY GRID SYSTEM -->
       <!-- Who am i row start-->
       <!-- <v-layout row>
@@ -59,7 +59,7 @@
             </div>
             <div class="d-inline-block" style="width:100%">
               <p class="float-left primary-color text-uppercase alternates-font">Phone:</p>
-              <p class="float-right">+92 (312) 1234567</p>
+              <p class="float-right">+92 (312) 8606539</p>
             </div>
           </b-col>
           <!-- <b-col sm="2"></b-col> -->
@@ -94,7 +94,7 @@
       <!-- What can i do ends -->
     </section>
 
-    <section class="experience-section">
+    <section id="experience" class="experience-section">
       <b-container>
         <b-row>
           <b-col class="heading-row">
@@ -125,7 +125,7 @@
       </b-container>
     </section>
 
-    <section class="skill-education">
+    <section id="skills" class="skill-education">
       <b-container>
         <b-row>
           <b-col class="heading-row">
@@ -165,7 +165,7 @@
       </b-container>
     </section>
 
-    <section class="portfolio" id="about">
+    <section id="portfolio" class="portfolio" >
       <b-container>
         <b-row>
           <b-col class="heading-row">
@@ -201,7 +201,7 @@
       </b-container>
     </section>
 
-    <section class="talk">
+    <section id="contact" class="talk">
       <b-container>
         <b-row>
           <b-col class="heading-row">

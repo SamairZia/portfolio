@@ -15,7 +15,7 @@
       >
 
         <v-list-tile-content>
-        <v-list-tile-title style="text-align:center">{{ item.title }}</v-list-tile-title>
+        <v-list-tile-title style="text-align:center"><a :href='item.link'>{{ item.title }}</a> </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -30,11 +30,11 @@ export default {
   data(){
     return {
       items: [
-          { title: 'About Me'},
-          { title: 'Experience'},
-          { title: 'Skills & Eduation'},
-          { title: 'Portfolio'},
-          { title: 'Contact'},
+          { title: 'About Me', link: '#about'},
+          { title: 'Experience', link: '#experience'},
+          { title: 'Skills & Eduation', link: '#skills'},
+          { title: 'Portfolio', link: '#portfolio'},
+          { title: 'Contact', link: '#contact'},
 
         ]
     }
