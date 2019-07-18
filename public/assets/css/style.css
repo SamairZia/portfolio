@@ -94,12 +94,12 @@ h1, h2, h3, h4, h5, h6, p, label, small {
   padding: 10px;
 }
 
-.skill-education {
-  background: url("../img/abstract.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-}
+/* .skill-education { */
+  /* background: url("../img/abstract.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  /* position: relative; */
+/* } */
 
 /* .experience-section {
   background: url("../img/abstract.png");
@@ -151,4 +151,12 @@ h1, h2, h3, h4, h5, h6, p, label, small {
 .email-link:hover{
   color: #FFAA00;
   text-decoration: none;
+}
+
+.to-top{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 5px;
 }

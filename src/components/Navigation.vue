@@ -11,11 +11,11 @@
       <v-list-tile
         v-for="item in items"
         :key="item.title"
-        @click=""
+        @click="$vuetify.goTo(item.link, { offset: -1 })"
       >
 
         <v-list-tile-content>
-        <v-list-tile-title style="text-align:center"><a :href='item.link'>{{ item.title }}</a> </v-list-tile-title>
+        <v-list-tile-title style="text-align:center">{{ item.title }} </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>

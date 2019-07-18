@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="site-wrapper">
+    <section id="home" class="site-wrapper">
       <div class="site-title">
         <h1
           class="display-3 orbitron-font text-uppercase"
@@ -228,7 +228,8 @@
             </v-icon>
               <a class="email-link" href="tel:+923128606539"> +923128606539</a>
             </div>
-  
+            
+            <div class="to-top" @click="$vuetify.goTo('#home', { offset: -1 })"><i class="fa fa-long-arrow-alt-up"></i> Top</div>
           </b-col>
         </b-row>
       </b-container>
