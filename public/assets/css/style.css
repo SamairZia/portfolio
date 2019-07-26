@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p, label, small {
 }
 
 .primary-color{
-  color:#FFAA00;
+  color:#FFAA00 !important;
 }
 
 .primary-background{
@@ -55,6 +55,10 @@ h1, h2, h3, h4, h5, h6, p, label, small {
   width: 100%;
 }
 
+.w-80{
+  width: 80%;
+}
+
 .w-75{
   width: 75%;
 }
@@ -67,6 +71,14 @@ h1, h2, h3, h4, h5, h6, p, label, small {
   width: 25%;
 }
 
+.f-18{
+  font-size: 18px;
+}
+
+.f-16{
+  font-size: 16px;
+}
+
 .heading-row{
   margin-left: 10px;
   margin-bottom: 10px;
@@ -77,7 +89,12 @@ h1, h2, h3, h4, h5, h6, p, label, small {
 .site-title{
   position: absolute;
   bottom: 40px;
-  right: 30px;
+  right: 50px;
+}
+
+.site-heading{
+  color:#FFAA00;
+  text-align:right;
 }
 
 /* About section css */
@@ -94,12 +111,12 @@ h1, h2, h3, h4, h5, h6, p, label, small {
   padding: 10px;
 }
 
-/* .skill-education { */
-  /* background: url("../img/abstract.png"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100% 100%; */
-  /* position: relative; */
-/* } */
+.skill-education {
+  background: url("../img/abstract.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
 
 /* .experience-section {
   background: url("../img/abstract.png");
@@ -160,3 +177,5 @@ h1, h2, h3, h4, h5, h6, p, label, small {
   cursor: pointer;
   padding: 5px;
 }
+
+/* color: #fb9235 */

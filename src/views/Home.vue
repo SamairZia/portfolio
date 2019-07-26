@@ -3,37 +3,13 @@
     <section id="home" class="site-wrapper">
       <div class="site-title">
         <h1
-          class="display-3 orbitron-font text-uppercase"
-          style="color:#FFAA00;text-align:right"
+          class="display-3 orbitron-font text-uppercase site-heading"
         >Samair Zia</h1>
         <h1 class="display-2 orbitron-font">Front-end Developer</h1>
       </div>
     </section>
     <section id="about" class="about-section">
-      <!-- USING VUETIFY GRID SYSTEM -->
-      <!-- Who am i row start-->
-      <!-- <v-layout row>
-    <v-flex xs12 sm6 md6 lg6 ma-5>
-      <h1 class="primary-color roboto-font display-2 mb-3">Who I am.</h1>
-      <p class=" subheading" >I am Front-end Developer that specializes in developing Single page Applications / E-Commerce portals using HTML5, CSS3, Javascript, JQuery, Bootstrap etc. Recently I have started exploring Vue.js along with its component framework/library including Vuetify, Element UI.</p>
-    </v-flex>
-    <v-flex xs12 sm4 md4 lg4 ma-5 pt-5>
-      <div class="mt-3 d-inline-block" style="width:100%">
-      <p class="float-left primary-color text-uppercase alternates-font"> Location: </p> <p class="float-right">Karachi, Pakistan</p>
-      </div>
-      <div class=" d-inline-block" style="width:100%">
-      <p class="float-left primary-color text-uppercase alternates-font"> Email: </p> <p class="float-right">samairzia1995@gmail.com</p>
-      </div>
-      <div class=" d-inline-block" style="width:100%">
-      <p class="float-left primary-color text-uppercase alternates-font"> Phone: </p> <p class="float-right">+92 (312) 1234567</p>
-      </div>
-    </v-flex>
-    <v-flex xs12 sm2 md2 lg2>
-
-    </v-flex>
-      </v-layout>-->
-      <!-- Who am i row end-->
-
+<!-- <span>I don’t like to define myself by the work I’ve done. I define myself by the work I want to do.</span>   -->
       <!-- USING BOOTSTRAP-VUE GRID SYSTEM -->
       <!-- Who am i row start-->
       <b-container>
@@ -46,18 +22,18 @@
           <b-col class="ml-3" sm="6">
             <p
               class="subheading"
-            >I am Front-end Developer that specializes in developing Single page Applications / E-Commerce portals using HTML5, CSS3, Javascript, JQuery, Bootstrap etc. Recently I have started exploring Vue.js along with its component framework/library including Vuetify, Element UI.</p>
+            > I am Front-end Developer that specializes in developing Single page Applications / E-Commerce portals using HTML5, CSS3, Javascript, JQuery, Bootstrap etc. Recently I have started exploring Vue.js along with its component framework/library including Vuetify, Element UI.</p>
           </b-col>
           <b-col offset-sm="1" sm="4">
-            <div class="mt-3 d-inline-block" style="width:100%">
+            <div class="mt-3 d-inline-block w-100">
               <p class="float-left primary-color text-uppercase alternates-font">Location:</p>
               <p class="float-right">Karachi, Pakistan</p>
             </div>
-            <div class="d-inline-block" style="width:100%">
+            <div class="d-inline-block w-100">
               <p class="float-left primary-color text-uppercase alternates-font">Email:</p>
               <p class="float-right">samairzia1995@gmail.com</p>
             </div>
-            <div class="d-inline-block" style="width:100%">
+            <div class="d-inline-block w-100">
               <p class="float-left primary-color text-uppercase alternates-font">Phone:</p>
               <p class="float-right">+92 (312) 8606539</p>
             </div>
@@ -74,6 +50,7 @@
         <b-row>
           <b-col class="heading-row">
             <h1 class="primary-color roboto-font display-2 mb-3">What can I do for you</h1>
+            <p class="f-16">A front-end developer's role is to combine design and business logic to achieve a user-facing product. To do this successfully, a wide skill set is necessary to produce a quality user experience that leads to meeting business goals.</p>
           </b-col>
         </b-row>
         <b-row>
@@ -81,10 +58,10 @@
             <v-expansion-panel popout dark>
               <v-expansion-panel-content v-for="cando in candolist" :key="cando.heading">
                 <template v-slot:header>
-                  <div class style="font-size:18px">{{ cando.heading }}</div>
+                  <div class="f-18">{{ cando.heading }}</div>
                 </template>
                 <v-card>
-                  <v-card-text>{{ cando.description }}</v-card-text>
+                  <v-card-text class="f-16">{{ cando.description }}</v-card-text>
                 </v-card>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -116,7 +93,11 @@
                 </template>
                 <v-card class="elevation-2 white black--text">
                   <v-card-title class="headline">{{ wherelistcontent.name }}</v-card-title>
-                  <v-card-text>{{ wherelistcontent.role }}</v-card-text>
+                  <v-card-text>{{ wherelistcontent.role }} <br v-if="wherelistcontent.role2">
+                    {{ wherelistcontent.role2 }} <br v-if="wherelistcontent.role2">
+                    {{ wherelistcontent.role3 }} <br v-if="wherelistcontent.role2">
+                    {{ wherelistcontent.role4 }}
+                  </v-card-text>
                 </v-card>
               </v-timeline-item>
             </v-timeline>
@@ -140,7 +121,7 @@
               <div class="education-info" v-for="education in educationlist" :key="education.name">
                 <label>{{ education.name }}</label>
                 <br>
-                <label class="primary-color" style="font-size:18px;">{{ education.degree }}</label>
+                <label class="primary-color f-18">{{ education.degree }}</label>
                 <br>
                 <label>{{ education.majors }}</label>
                 <br>
@@ -174,22 +155,22 @@
         </b-row>
         <b-row>
           <b-col offset-sm="1" sm="10">
-            <v-carousel hide-controls height="auto" dark class="mt-3" style="box-shadow:none">
+            <v-carousel hide-controls height="auto" dark class="mt-3 shadow-none">
               <v-carousel-item v-for="portfolio in portfoliolist" :key="portfolio.name">
                 <div class="pb-5">
                   <h3 class="primary-color text-sm-center">{{ portfolio.name }}</h3>
                   <p class="text-sm-center">{{ portfolio.project }}</p>
-                  <div style="width:80%" class="px-5 pt-5">
+                  <div class="px-5 pt-5 w-80">
                     <p class="primary-color">Project Details</p>
                     <p>{{ portfolio.details }}</p>
                   </div>
                   <div class="px-5 pb-5">
                     <p class="primary-color mt-4">Project Info</p>
-                    <v-icon style="font-size:18px;color:#FFAA00">settings</v-icon>
+                    <v-icon class="f-18 primary-color">settings</v-icon>
                     <label class="ml-3">Tools used:</label>
                     <label class="ml-4">{{ portfolio.tools }}</label>
                     <br>
-                    <v-icon style="font-size:18px;color:#FFAA00">done_all</v-icon>
+                    <v-icon class="f-18 primary-color">done_all</v-icon>
                     <label class="ml-3">Project done:</label>
                     <label class="ml-4">{{ portfolio.as }}</label>
                   </div>
@@ -218,12 +199,12 @@
             <a href="https://www.linkedin.com/in/samairzia" target="_blank"><i class='fab fa-linkedin social-icons'></i></a>
             <a href="https://www.facebook.com/SamairZia95" target="_blank"><i class='fab fa-facebook social-icons'></i></a>
             <div class="mt-3">
-            <v-icon style="color: #FFAA00">
+            <v-icon class="primary-color">
               email
             </v-icon>
               <a class="email-link" href="mailto:samairzia1995@gmail.com"> samairzia1995@gmail.com</a>
               <br><br>
-              <v-icon style="color: #FFAA00">
+            <v-icon class="primary-color">
               phone
             </v-icon>
               <a class="email-link" href="tel:+923128606539"> +923128606539</a>
@@ -244,20 +225,23 @@ export default {
       candolist: [
         {
           heading: "Web Development",
-          description: "Some web development description"
+          description: "Either it is Business website, Personal Blog, Single Page Application or E-commerce Store for your brand. I try to develop websites that follow best practices of speed optimization and are built with mobile first approach, With my experience I can Create responsive websites that work on a wide range of devices generating more leads and decreasing your current bounce rate. This is what matters, doesn’t it?"
         },
-        { heading: "CMS", description: "Some CMS development description" },
-        { heading: "SEO", description: "Some SEO Services" },
+        { heading: "CMS", description: " I can develop CMS using WordPress, Magento and from the scratch also. " },
+        { heading: "SEO", description: " SEO is basically the practice of increasing the quantity and quality of traffic to your website through organic search engine results. I will do SEO of your Business/Blog/E-commerce website to generate more traffic and rank better on Search engines. It will include On page , Off page SEO on multiple Keywords." },
         {
           heading: "Social Media Marketing",
-          description: "Some Social media marketing description"
+          description: "Social media marketing is a powerful way for businesses of all sizes to reach prospects and customers. Your customers are already interacting with brands through social media, and if you're not speaking directly to your audience through social platforms like Facebook, Twitter, Instagram, and Pinterest, you're missing out! Great marketing on social media can bring remarkable success to your business and can boost your sales."
         }
       ],
 
       wherelist: [
         {
           name: "Freelance",
-          role: "Front-end Developer",
+          role: "Front-end Development",
+          role2: "SEO Services",
+          role3: "E-commerce development",
+          role4: "Digital Marketing",
           duration: "2017 till date"
         },
         {
